@@ -163,7 +163,7 @@ input.onButtonPressed(Button.AB, function () {
     } else if (Letter == 37) {
         radio.sendNumber(0)
     } else if (Letter == 38) {
-        radio.sendString(" ")
+        radio.sendString("_")
     }
     basic.showString("Sent")
 })
