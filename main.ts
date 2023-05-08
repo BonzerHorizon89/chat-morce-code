@@ -2,6 +2,9 @@ input.onPinPressed(TouchPin.P0, function () {
     radio.setGroup(100)
     basic.showString("c1")
 })
+radio.onReceivedNumber(function (receivedNumber) {
+    basic.showNumber(receivedNumber)
+})
 input.onButtonPressed(Button.A, function () {
     Letter = Letter + 1
     if (Letter == 1) {
@@ -56,6 +59,28 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("Y")
     } else if (Letter == 26) {
         basic.showString("Z")
+    } else if (Letter == 27) {
+        basic.showNumber(1)
+    } else if (Letter == 28) {
+        basic.showNumber(2)
+    } else if (Letter == 29) {
+        basic.showNumber(3)
+    } else if (Letter == 30) {
+        basic.showNumber(4)
+    } else if (Letter == 31) {
+        basic.showNumber(5)
+    } else if (Letter == 32) {
+        basic.showNumber(6)
+    } else if (Letter == 33) {
+        basic.showNumber(7)
+    } else if (Letter == 34) {
+        basic.showNumber(8)
+    } else if (Letter == 35) {
+        basic.showNumber(9)
+    } else if (Letter == 36) {
+        basic.showNumber(0)
+    } else if (Letter == 37) {
+        basic.showString("_")
     }
 })
 input.onPinPressed(TouchPin.P2, function () {
@@ -115,6 +140,30 @@ input.onButtonPressed(Button.AB, function () {
         radio.sendString("Y")
     } else if (Letter == 26) {
         radio.sendString("Z")
+    } else if (Letter == 27) {
+        radio.sendNumber(1)
+    } else if (Letter == 28) {
+        radio.sendNumber(2)
+    } else if (Letter == 29) {
+        radio.sendNumber(3)
+    } else if (Letter == 30) {
+        radio.sendNumber(4)
+    } else if (Letter == 31) {
+        radio.sendNumber(5)
+    } else if (Letter == 32) {
+        radio.sendNumber(6)
+    } else if (Letter == 33) {
+        radio.sendNumber(6)
+    } else if (Letter == 34) {
+        radio.sendNumber(7)
+    } else if (Letter == 35) {
+        radio.sendNumber(8)
+    } else if (Letter == 36) {
+        radio.sendNumber(9)
+    } else if (Letter == 37) {
+        radio.sendNumber(0)
+    } else if (Letter == 38) {
+        radio.sendString(" ")
     }
     basic.showString("Sent")
 })
@@ -175,6 +224,28 @@ input.onButtonPressed(Button.B, function () {
         basic.showString("Y")
     } else if (Letter == 26) {
         basic.showString("Z")
+    } else if (Letter == 27) {
+        basic.showNumber(1)
+    } else if (Letter == 28) {
+        basic.showNumber(2)
+    } else if (Letter == 29) {
+        basic.showNumber(3)
+    } else if (Letter == 30) {
+        basic.showNumber(4)
+    } else if (Letter == 31) {
+        basic.showNumber(5)
+    } else if (Letter == 32) {
+        basic.showNumber(6)
+    } else if (Letter == 33) {
+        basic.showNumber(7)
+    } else if (Letter == 34) {
+        basic.showNumber(8)
+    } else if (Letter == 35) {
+        basic.showNumber(9)
+    } else if (Letter == 36) {
+        basic.showNumber(10)
+    } else if (Letter == 37) {
+        basic.showString("_")
     }
 })
 input.onPinPressed(TouchPin.P1, function () {
